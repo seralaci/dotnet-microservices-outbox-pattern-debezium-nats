@@ -1,0 +1,23 @@
+<Solution>
+  <Folder Name="/Aspire/">
+    <Project Path="src/Aspire/OutboxDemo.AppHost/OutboxDemo.AppHost.csproj" />
+    <Project Path="src/Aspire/OutboxDemo.ServiceDefaults/OutboxDemo.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/OutboxDemo.Shared/OutboxDemo.Shared.csproj" />
+  </Folder>
+  <Folder Name="/Services/Order/">
+    <Project Path="src/Services/Order/OutboxDemo.Order.Api/OutboxDemo.Order.Api.csproj" />
+    <Project Path="src/Services/Order/OutboxDemo.Order.MigrationService/OutboxDemo.Order.MigrationService.csproj" />
+  </Folder>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/Notifier/">
+    <Project Path="src/Services/Notifier/OutboxDemo.Notifier/OutboxDemo.Notifier.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="README.md" />
+  </Folder>
+</Solution>

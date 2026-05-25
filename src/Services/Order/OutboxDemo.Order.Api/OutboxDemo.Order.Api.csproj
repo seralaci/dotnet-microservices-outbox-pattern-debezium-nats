@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <RootNamespace>OutboxDemo.Order.Api</RootNamespace>
+    <UserSecretsId>outbox-demo-order-api-7a5b6c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Scalar.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Aspire\OutboxDemo.ServiceDefaults\OutboxDemo.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\OutboxDemo.Shared\OutboxDemo.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

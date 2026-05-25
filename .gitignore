@@ -1,0 +1,24 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/
+*.DS_Store
+
+# Aspire
+**/.aspire/
+
+# Build output
+artifacts/
+publish/
+
+# Logs
+*.log
+
+# Environment
+*.env
+.env.*
+!.env.template

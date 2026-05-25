@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <RootNamespace>OutboxDemo.Notifier</RootNamespace>
+    <UserSecretsId>outbox-demo-notifier-b8c7d6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.NATS.Net" />
+    <PackageReference Include="NATS.Client.JetStream" />
+    <PackageReference Include="NATS.Client.Serializers.Json" />
+    <PackageReference Include="MailKit" />
+    <PackageReference Include="MimeKit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Aspire\OutboxDemo.ServiceDefaults\OutboxDemo.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\OutboxDemo.Shared\OutboxDemo.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

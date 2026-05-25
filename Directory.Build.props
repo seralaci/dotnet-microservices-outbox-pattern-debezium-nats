@@ -1,0 +1,22 @@
+<Project>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1902;NU1903;CA1716</WarningsNotAsErrors>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <NuGetAuditMode>direct</NuGetAuditMode>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    <Authors>OutboxDemo</Authors>
+    <Company>OutboxDemo</Company>
+    <Product>Outbox Pattern Demo</Product>
+    <Copyright>Copyright (c) 2026</Copyright>
+  </PropertyGroup>
+
+</Project>

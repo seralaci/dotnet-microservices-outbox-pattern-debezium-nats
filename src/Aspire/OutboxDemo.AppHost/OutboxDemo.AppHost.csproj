@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="13.3.3" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>outbox-demo-apphost-c1f2a3b4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" />
+    <PackageReference Include="Aspire.Hosting.NATS" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Services\Order\OutboxDemo.Order.Api\OutboxDemo.Order.Api.csproj" />
+    <ProjectReference Include="..\..\Services\Order\OutboxDemo.Order.MigrationService\OutboxDemo.Order.MigrationService.csproj" />
+    <ProjectReference Include="..\..\Services\Notifier\OutboxDemo.Notifier\OutboxDemo.Notifier.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Debezium\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Debezium\conf\application.properties" />
+    <Content Include="Debezium\conf\application.properties">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Remove="Debezium\data\offsets.dat" />
+  </ItemGroup>
+
+</Project>

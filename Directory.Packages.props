@@ -1,0 +1,53 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    <AspireVersion>13.3.1</AspireVersion>
+    <AspireComponentVersion>13.3.0</AspireComponentVersion>
+    <EfCoreVersion>10.0.7</EfCoreVersion>
+    <NpgsqlEfCoreVersion>10.0.1</NpgsqlEfCoreVersion>
+    <NatsVersion>2.7.3</NatsVersion>
+    <OpenTelemetryVersion>1.15.3</OpenTelemetryVersion>
+  </PropertyGroup>
+  <ItemGroup Label="Aspire Hosting">
+    <PackageVersion Include="Aspire.Hosting.AppHost" Version="13.3.5" />
+    <PackageVersion Include="Aspire.Hosting.PostgreSQL" Version="13.3.5" />
+    <PackageVersion Include="Aspire.Hosting.NATS" Version="13.3.5" />
+  </ItemGroup>
+  <ItemGroup Label="Aspire Components">
+    <PackageVersion Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="13.3.5" />
+    <PackageVersion Include="Aspire.NATS.Net" Version="13.3.5" />
+  </ItemGroup>
+  <ItemGroup Label="Microsoft Extensions">
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.6.0" />
+    <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="10.6.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.8" />
+  </ItemGroup>
+  <ItemGroup Label="API Documentation">
+    <PackageVersion Include="Scalar.AspNetCore" Version="2.14.14" />
+  </ItemGroup>
+  <ItemGroup Label="EF Core">
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.8" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(EfCoreVersion)" />
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(NpgsqlEfCoreVersion)" />
+  </ItemGroup>
+  <ItemGroup Label="NATS">
+    <PackageVersion Include="NATS.Net" Version="$(NatsVersion)" />
+    <PackageVersion Include="NATS.Client.JetStream" Version="2.8.0" />
+    <PackageVersion Include="NATS.Client.Hosting" Version="$(NatsVersion)" />
+    <PackageVersion Include="NATS.Client.Serializers.Json" Version="2.8.0" />
+  </ItemGroup>
+  <ItemGroup Label="OpenTelemetry">
+    <PackageVersion Include="OpenTelemetry.Api" Version="$(OpenTelemetryVersion)" />
+    <PackageVersion Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="$(OpenTelemetryVersion)" />
+    <PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="$(OpenTelemetryVersion)" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.15.2" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.Http" Version="1.15.1" />
+    <PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="1.15.1" />
+  </ItemGroup>
+  <ItemGroup Label="Email">
+    <PackageVersion Include="MailKit" Version="4.16.0" />
+    <PackageVersion Include="MimeKit" Version="4.16.0" />
+  </ItemGroup>
+</Project>
