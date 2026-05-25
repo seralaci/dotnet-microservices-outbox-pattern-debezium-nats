@@ -77,7 +77,7 @@ From there every resource is reachable: logs, traces, NATS, PostgreSQL, Mailpit,
    Aspire dashboard and follow the Scalar link). Pick the `POST /orders`
    endpoint, fill in the request body, and hit **Send**.
 
-![Scalar](./docs/Scalar.png)
+![Scalar](./docs/scalar.png)
 
 3. Within a few seconds the "Thank you for your order!" email appears in Mailpit (`http://localhost:8025`).
 
